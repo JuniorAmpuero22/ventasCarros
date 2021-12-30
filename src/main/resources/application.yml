@@ -1,0 +1,15 @@
+server:
+  port: 9004
+
+spring:
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost/ventas?useSSL=false&serverTimezone=America/Lima
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
